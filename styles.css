@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    width: calc(min(100%, 1200px));
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+.buffer {
+    height: 80px;
+}
+
+.titleSec {
+    font-size: 2em;
+    color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 5px;
+}
+
+.titlePrim {
+    font-size: 2.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 15px;
+}
+
+.colonnes {
+    display: flex;
+    flex-direction: row;
+}
+
+.colonneImage {
+    width: 50%;
+}
+
+.colonneText {
+    width: 50%;
+    padding-right: 5px;
+}
+
+.containerBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxPrim {
+    border: 2px solid lightgrey;
+    font-size: 1em;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: lightsteelblue;
+    border: 2px solid lightgrey;
+    font-size: 1em;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.box img {
+    width: 100%
+}
+
+.bufferBottom {
+    height: 10px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0px;
+    width: calc(min(100%, 1200px));
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 800px) {
+    .containerBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .box {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .largerBox {
+        flex: 2 !important;
+    }
+
+    .colonnes {
+        display: block;
+    }
+
+    .colonneImage {
+        width: 100%;
+    }
+
+    .colonneText {
+        width: 100%;
+        padding-right: 0px;
+    }
+}
